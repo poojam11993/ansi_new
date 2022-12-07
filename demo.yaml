@@ -1,0 +1,9 @@
+---
+- name: create a directory
+  hosts: all
+  tasks:
+    - name: new dir
+      file:
+        path: /root/created_now
+        state: directory
+        mode: '0755
